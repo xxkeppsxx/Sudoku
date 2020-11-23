@@ -9,7 +9,6 @@ public class ThreadSolve implements Callable<Boolean> {
 
     public ThreadSolve(int rawSudoku[][]) {
         this.rawSudoku = rawSudoku;
-
     }
 
     @Override
