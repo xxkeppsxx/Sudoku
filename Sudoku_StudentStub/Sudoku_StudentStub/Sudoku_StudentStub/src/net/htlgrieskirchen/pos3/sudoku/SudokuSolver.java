@@ -103,6 +103,7 @@ public class SudokuSolver implements ISodukoSolver {
         solver(rawSudoku);
         return rawSudoku;
     }
+    
     public boolean solver(int[][] rawSudoku) {
         for (int i = 0; i < rawSudoku.length; i++) {
             for (int j = 0; j < rawSudoku.length; j++) {
@@ -188,7 +189,7 @@ public class SudokuSolver implements ISodukoSolver {
         return (end - start) / 10;
     }
 
-    
+
 
 
     public long benchmarkParallel(int[][] rawSudoku) {
