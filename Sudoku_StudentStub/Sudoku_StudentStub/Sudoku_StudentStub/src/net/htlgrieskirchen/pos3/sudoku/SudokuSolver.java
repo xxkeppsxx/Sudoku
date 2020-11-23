@@ -98,12 +98,13 @@ public class SudokuSolver implements ISodukoSolver {
         }
         return true;
     }
+    
     @Override
     public int[][] solveSudoku(int[][] rawSudoku) {
         solver(rawSudoku);
         return rawSudoku;
     }
-    
+
     public boolean solver(int[][] rawSudoku) {
         for (int i = 0; i < rawSudoku.length; i++) {
             for (int j = 0; j < rawSudoku.length; j++) {
