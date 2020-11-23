@@ -188,6 +188,8 @@ public class SudokuSolver implements ISodukoSolver {
         return (end - start) / 10;
     }
 
+    
+
 
     public long benchmarkParallel(int[][] rawSudoku) {
         long start = System.currentTimeMillis();
