@@ -98,7 +98,7 @@ public class SudokuSolver implements ISodukoSolver {
         }
         return true;
     }
-    
+
     @Override
     public int[][] solveSudoku(int[][] rawSudoku) {
         solver(rawSudoku);
@@ -148,7 +148,6 @@ public class SudokuSolver implements ISodukoSolver {
         return rawSudoku;
     }
 
-    // add helper methods here if necessary
 
     public boolean checknumbers( int[][] soduko, int spalte, int zeile , int number) {
         for (int q = 0; q < soduko.length; q++) {
